@@ -22,12 +22,12 @@ document.addEventListener('DOMContentLoaded', function main(e) {
                 var cd = cds[i];
 
                 var titulo = cd.getAttribute('titulo');
+                
+                var tituloContainer = document.createElement('p');
 
-                var p = document.createElement('p');
+                tituloContainer.textContent = titulo;
 
-                p.textContent = titulo;
-
-                document.body.appendChild(p);
+                document.body.appendChild(tituloContainer);
             }
 
         } else {  // Erro
